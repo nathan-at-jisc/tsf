@@ -1,0 +1,19 @@
+version: "3"
+services:
+    flyway:
+        image: flyway/flyway
+        command: -url=jdbc:postgresql://db:5432/postgres -user=postgres -password=postgres -locations='filesystem:/flyway/sql' migrate
+        volumes:
+            - ./db:/flyway/sql
+        depends_on: 
+            - db
+        links:
+            - db
+    db:
+        image: postgres
+        environment:
+            - POSTGRES_DB=postgres
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - "5434:5432"

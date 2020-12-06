@@ -1,0 +1,54 @@
+[
+    {
+        "scanning_device_id": "1",
+        "visible_devices": [
+            {
+                "visible_device_id": "2",
+                "time": "2020-12-04T08:15:30-05:00",
+                "interface": "WIFI",
+                "signal_strength": 2
+            },
+            {
+                "visible_device_id": "3",
+                "time": "2020-12-04T08:17:30-05:00",
+                "interface": "WIFI",
+                "signal_strength": 5
+            }
+        ]
+    },
+    {
+        "scanning_device_id": "2",
+        "visible_devices": [
+            {
+                "visible_device_id": "1",
+                "time": "2020-12-04T09:15:30-05:00",
+                "interface": "WIFI",
+                "signal_strength": 1
+            },
+            {
+                "visible_device_id": "3",
+                "time": "2020-12-04T09:15:30-05:00",
+                "interface": "WIFI",
+                "signal_strength": 4
+            }
+        ]
+    },
+    {
+        "scanning_device_id": "3",
+        "visible_devices": [
+            {
+                "visible_device_id": "1",
+                "time": "2020-12-04T09:18:30-05:00",
+                "interface": "WIFI",
+                "signal_strength": 4
+            },
+            {
+                "visible_device_id": "2",
+                "time": "2020-12-04T09:18:30-05:00",
+                "interface": "WIFI",
+                "signal_strength": 8
+            }
+        ]
+    }
+
+]
